@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<link href="css/boostrap.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/be891b8c0c.js">
+  </script>
+      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <link rel="stylesheet" href="../path/to/lightbox.css">
+      <script src="../path/to/lightbox.js"></script>
+	<title>Document</title>
+	<style>
+	     *, ::after, ::before {
+	   -webkit-box-sizing: unset !important;
+	           box-sizing: unset !important;
+	}
+	       html{
+	           min-width: 470px;
+	       }
+	   .menu_list_1, .menu_list_2{
+	       -webkit-transition: height 0.25s;
+	       -o-transition: height 0.25s;
+	       transition: height 0.25s;
+	       overflow: hidden;
+	   }
+	   .menu_list_1 >li, .menu_list_2>li{
+		   list-style-type: none;
+		   padding: 5px 0px;
+		   text-align: center;
+		   width: 100
+	   }
+	   .menu_list_2 > li > button, .menu_list_1 > li > button{
+		   width: 100px !important;
+		   font-size: 13px;
+	   }
+	   .lists{
+	       list-style-type: none;
+	   }
+	   .fas{
+	       padding-right: 5px;
+	       text-align: center;
+	       margin-right: 5px;
+	       -webkit-transition: all 0.25s ease-in-out;
+	       -o-transition: all 0.25s ease-in-out;
+	       transition: all 0.25s ease-in-out;
+	   }
+
+	   .container{
+	       height: 300px;
+	       display: -webkit-box;
+	       display: -ms-flexbox;
+	       display: flex;
+	       -webkit-box-align: center;
+	           -ms-flex-align: center;
+	               align-items: center;
+	   }
+	   #main_place{
+	       overflow-y: auto;
+	       height: 400px;
+	       overflow-x: hidden;
+	   }
+	   .img__wrap{
+	       margin: 10px;
+	   }
+	   .img__description{
+	       font-size: 11px !important;
+	       text-align: center;
+	   }
+     @media (max-width: 700px) and (orientation: portrait) {
+       .container{
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+             -ms-flex-direction: column;
+                 flex-direction: column;
+       }
+     }
+	</style>
+	<title></title>
+</head>
+<body>
+	
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#"><img alt="logo" class="img-fluid" src="images/ResinSystem%20logo.png" width="50%"></a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="gallery.html">Galeria</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="product.html">Produkty</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container mt-5">
+		<div class="row">
+			<div class="menu_1">
+				<ol class="lists">
+					<li>
+						<i class="fas fa-arrow-alt-circle-right btn-1"></i>żywica(2)
+						<ul class="menu_list_1">
+							<li><button class="btn btn-primary" onclick="show('operation4')">Żywica do laminowania</button></li>
+							<li><button class="btn btn-primary" onclick="show('operation5')">Żywica odlewnicza</button></li>
+							<li style="visibility: hidden"></li>
+						</ul>
+					</li>
+					<li>
+						<i class="fas fa-arrow-alt-circle-right btn-2"></i>barwniki(3)
+						<ul class="menu_list_2" id="m_l_2">
+								<li><button class="btn btn-primary" onclick="show('operation1')">transparente</button></li>
+								<li><button class="btn btn-primary" onclick="show('operation2')">perłowe</button></li>
+							<li><button class="btn btn-primary" onclick="show('operation3')">pełne</button></li>						
+						</ul>
+					</li>
+				</ol>
+			</div>
+		</div>
+		<div class="col-xs-12">
+			<div class="mt-5 offset-1" id="main_place"></div>
+		</div>
+	</div><!--  -->
+	<div id="operation3" style="display:none">
+		<div class="d-md-flex">
+			<div class="card col-md-6 col-xs-12" style="overflow-y: auto;">
+				<div class="card-body">
+					<h5 class="card-title">Barwniki do żywic epoksydowych</h5>
+					<p class="card-text"></p>
+					<p>Nadają się do zabarwiania żywicy na dowolny kolor. Można je łączyć między sobą. Bardzo dobrze łączą się z żywicą. Nie występuje efekt "kaszy" lub niezabarwienia żywicy. Idealnie nadają się do żywicy Epoxy Resin Crystal Clear (żywica odlewnicza) i Epoxy Resin Clear (żywica do laminowania).</p>
+					<h4>Kluczowe cech:</h4>
+					<ul>
+						<li>wysoce wydajne (opakowanie 15ml. wystarcza na zabarwienie 1,5kg żywicy)</li>
+						<li>barwniki można łączyć między sobą</li>
+						<li>nie zawierają rozpuszczalników</li>
+						<li>nie są szkodliwe dla zdrowia</li>
+					</ul>
+					<p></p><a class="card-link" href="https://allegro.pl/oferta/barwniki-do-zywic-epoksydowych-10-ml-pelne-8490901720"  target="_blank">Allegro</a>
+				</div>
+			</div>
+			<div class="gallery full_dye d-md-flex flex-wrap col-xs-12 align-items-start">
+				<div class="img__wrap col-md-3">
+					<a data-lightbox="shop_2" href="full_dye/DSCN3323-min.JPG"><img alt="element" class="img-fluid" src="full_dye/DSCN3323.JPG">
+					<p class="img__description">ZIELONY</p></a>
+				</div>
+				<div class="img__wrap col-md-3">
+					<a data-lightbox="shop_2" href="full_dye/DSCN3324-min.JPG"><img alt="element" class="img-fluid" src="full_dye/DSCN3324.JPG"></a>
+					<p class="img__description">SELEDYNOWY</p>
+				</div>
+				<div class="img__wrap col-md-3">
+					<a data-lightbox="shop_2" href="full_dye/DSCN3325-min.JPG"><img alt="element" class="img-fluid" src="full_dye/DSCN3325.JPG"></a>
+					<p class="img__description">GRANATOWY</p>
+				</div>
+				<div class="img__wrap col-md-3">
+					<a data-lightbox="shop_2" href="full_dye/DSCN3326-min.JPG"><img alt="element" class="img-fluid" src="full_dye/DSCN3326.JPG"></a>
+					<p class="img__description">NIEBIESKI</p>
+				</div>
+				<div class="img__wrap col-md-3">
+					<a data-lightbox="shop_2" href="full_dye/DSCN3327-min.JPG"><img alt="element" class="img-fluid" src="full_dye/DSCN3327.JPG"></a>
+					<p class="img__description">TURKUSOWY</p>
+				</div>
+				<div class="img__wrap col-md-3">
+					<a data-lightbox="shop_2" href="full_dye/DSCN3328-min.JPG"><img alt="element" class="img-fluid" src="full_dye/DSCN3328.JPG"></a>
+					<p class="img__description">BORDOWY</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="operation2" style="display:none">
+		<div class="d-md-flex justify-content-center">
+			<div class="card col-md-6" style="width: 18rem;">
+				<div class="card-body">
+					<h5 class="card-title">Barwniki do żywic epoksydowych</h5>
+					<p class="card-text"></p>
+					<p>Nadają się do zabarwiania żywicy na dowolny kolor. Można je łączyć między sobą. Bardzo dobrze łączą się z żywicą. Nie występuje efekt "kaszy" lub niezabarwienia żywicy. Idealnie nadają się do żywicy Epoxy Resin Crystal Clear (żywica odlewnicza) i Epoxy Resin Clear (żywica do laminowania).</p>
+					<h4>Kluczowe cech:</h4>
+					<ul>
+						<li>wysoce wydajne (opakowanie 15ml. wystarcza na zabarwienie 1,5kg żywicy)</li>
+						<li>barwniki można łączyć między sobą</li>
+						<li>nie zawierają rozpuszczalników</li>
+						<li>nie są szkodliwe dla zdrowia</li>
+					</ul>
+					<h3>dostępne kolory</h3>
+					<ul>
+						<li>ZŁOTY</li>
+						<li>SREBRNY</li>
+						<li>ZIELONY</li>
+						<li>BŁĘKITNY</li>
+						<li>CZERWONY</li>
+						<li>CZARNY</li>
+						<li>FIOLETOWY</li>
+						<li>RÓŻOWY</li>
+					</ul>
+					<p></p><a class="card-link" href="https://allegro.pl/oferta/barwniki-perlowe-do-zywic-epoksydowych-15ml-7912125184"  target="_blank">allegro</a> 
+					<a class="card-link" href="https://www.olx.pl/oferta/promocja-barwnik-perlowe-do-zywicy-epoksydowej-15ml-CID628-IDz6bnm.html" target="_blank">OLX</a>
+				</div>
+			</div>
+			<div class="gallery perl_dye d-md-flex flex-wrap col-xs-6">
+				<div class="img__wrap col-md-2">
+					<a data-lightbox="shop_3" href="pearl_dye/DSCN3329-min.JPG"><img alt="element" class="img-fluid" src="pearl_dye/DSCN3329.JPG"></a>
+					<p class="img__description">ZŁOTY</p>
+				</div>
+				<div class="img__wrap col-md-2">
+					<a data-lightbox="shop_3" href="pearl_dye/DSCN3330-min.JPG"><img alt="element" class="img-fluid" src="pearl_dye/DSCN3330.JPG"></a>
+					<p class="img__description">SREBRNY</p>
+				</div>
+				<div class="img__wrap col-md-2">
+					<a data-lightbox="shop_3" href="pearl_dye/DSCN3332-min.JPG"><img alt="element" class="img-fluid" src="pearl_dye/DSCN3332.JPG"></a>
+					<p class="img__description">ZIELONY</p>
+				</div>
+				<div class="img__wrap col-md-2">
+					<a data-lightbox="shop_3" href="pearl_dye/DSCN3333-min.JPG"><img alt="element" class="img-fluid" src="pearl_dye/DSCN3333.JPG"></a>
+					<p class="img__description">BŁĘKITNY</p>
+				</div>
+				<div class="img__wrap col-md-2">
+					<a data-lightbox="shop_3" href="pearl_dye/DSCN3335-min.JPG"><img alt="element" class="img-fluid" src="pearl_dye/DSCN3335.JPG"></a>
+					<p class="img__description">CZERWONY</p>
+				</div>
+				<div class="img__wrap col-md-2">
+					<a data-lightbox="shop_3" href="pearl_dye/DSCN3336-min.JPG"><img alt="element" class="img-fluid" src="pearl_dye/DSCN3336.JPG"></a>
+					<p class="img__description">CZARNY</p>
+				</div>
+				<div class="img__wrap col-md-2">
+					<a data-lightbox="shop_3" href="pearl_dye/DSCN3338-min.JPG"><img alt="element" class="img-fluid" src="pearl_dye/DSCN3338.JPG"></a>
+					<p class="img__description">FIOLETOWY</p>
+				</div>
+				<div class="img__wrap col-md-2">
+					<a data-lightbox="shop_3" href="pearl_dye/DSCN3339-min.JPG"><img alt="element" class="img-fluid" src="pearl_dye/DSCN3339.JPG"></a>
+					<p class="img__description">RÓŻOWY</p>
+				</div>
+				<div class="img__wrap col-md-2">
+					<a data-lightbox="shop_3" href="pearl_dye/DSCN3331-min.JPG"><img alt="element" class="img-fluid" src="pearl_dye/DSCN3331.JPG"></a>
+					<p class="img__description">ŻÓŁTY</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="operation1" style="display:none">
+		<div class="d-md-flex">
+			<div class="card col-md-6" style="width: 18rem;">
+				<div class="card-body">
+					<h5 class="card-title">Barwniki do żywic epoksydowych</h5>
+					<p class="card-text"></p>
+					<p>Nadają się do zabarwiania żywicy na dowolny kolor. Można je łączyć między sobą. Bardzo dobrze łączą się z żywicą. Nie występuje efekt "kaszy" lub niezabarwienia żywicy. Idealnie nadają się do żywicy Epoxy Resin Crystal Clear (żywica odlewnicza) i Epoxy Resin Clear (żywica do laminowania).</p>
+					<h4>Kluczowe cechy:</h4>
+					<ul>
+						<li>wysoce wydajne (opakowanie 15ml. wystarcza na zabarwienie 1,5kg żywicy)</li>
+						<li>barwniki można łączyć między sobą</li>
+						<li>nie zawierają rozpuszczalników</li>
+						<li>nie są szkodliwe dla zdrowia</li>
+					</ul>
+					<h3>dostępne barwniki</h3>
+					<ul>
+						<li>BIAŁY</li>
+						<li>ŻÓŁTY</li>
+						<li>CZERWONY</li>
+						<li>CIEMNO ZIELONY</li>
+						<li>JASNO ZIELONY</li>
+						<li>NIEBIESKI</li>
+						<li>CIEMNO BRĄZOWY</li>
+						<li>JASNO BRĄZOWY</li>
+						<li>CZARNY</li>
+					</ul>
+					<p></p><a class="card-link" href="https://allegro.pl/oferta/barwniki-do-zywic-epoksydowych-15ml-transparentny-7836040790" target="_blank">allegro</a> 
+					<a class="card-link" href="https://www.olx.pl/oferta/promocja-barwnik-do-zywicy-epoksydowej-15ml-CID628-IDy2V6K.html" target="_blank">OLX</a>
+				</div>
+			</div>
+			<div class="gallery transparent_dye d-md-flex flex-wrap col-xs-6">
+				<div class="img__wrap col-md-2">
+					<a data-lightbox="shop_1" href="transparent_dye/DSCN3347-min.JPG"><img alt="element" class="img-fluid" src="transparent_dye/DSCN3347.JPG"></a>
+					<p class="img__description">BIAŁY</p>
+				</div>
+				<div class="img__wrap col-md-2">
+					<a data-lightbox="shop_1" href="transparent_dye/DSCN3348-min.JPG"><img alt="element" class="img-fluid" src="transparent_dye/DSCN3348.JPG"></a>
+					<p class="img__description">ŻÓŁTY</p>
+				</div>
+				<div class="img__wrap col-md-2">
+					<a data-lightbox="shop_1" href="transparent_dye/DSCN3349-min.JPG"><img alt="element" class="img-fluid" src="transparent_dye/DSCN3349.JPG"></a>
+					<p class="img__description">CZERWONY</p>
+				</div>
+				<div class="img__wrap col-md-2">
+					<a data-lightbox="shop_1" href="transparent_dye/DSCN3350-min.JPG"><img alt="element" class="img-fluid" src="transparent_dye/DSCN3350.JPG"></a>
+					<p class="img__description">CIEMMNO ZIELONY</p>
+				</div>
+				<div class="img__wrap col-md-2">
+					<a data-lightbox="shop_1" href="transparent_dye/DSCN3351-min.JPG"><img alt="element" class="img-fluid" src="transparent_dye/DSCN3351.JPG"></a>
+					<p class="img__description">JASNO ZIELONY</p>
+				</div>
+				<div class="img__wrap col-md-2">
+					<a data-lightbox="shop_1" href="transparent_dye/DSCN3352-min.JPG"><img alt="element" class="img-fluid" src="transparent_dye/DSCN3352.JPG"></a>
+					<p class="img__description">NIEBIESKI</p>
+				</div>
+				<div class="img__wrap col-md-2">
+					<a data-lightbox="shop_1" href="transparent_dye/DSCN3353-min.JPG"><img alt="element" class="img-fluid" src="transparent_dye/DSCN3353.JPG"></a>
+					<p class="img__description">CIEMNO BRĄZOWY</p>
+				</div>
+				<div class="img__wrap col-md-2">
+					<a data-lightbox="shop_1" href="transparent_dye/DSCN3354-min.JPG"><img alt="element" class="img-fluid" src="transparent_dye/DSCN3354.JPG"></a>
+					<p class="img__description">JASNO BRĄZOWY</p>
+				</div>
+				<div class="img__wrap col-md-2">
+					<a data-lightbox="shop_1" href="transparent_dye/DSCN3356-min.JPG"><img alt="element" class="img-fluid" src="transparent_dye/DSCN3356.JPG"></a>
+					<p class="img__description">CZARNY</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="operation4" style="display:none">
+		<div class="d-md-flex">
+			<div class="card col-md-6" style="width: 18rem;">
+				<div class="card-body">
+					<h5 class="card-title">Żywica do laminowania</h5>
+					<p class="card-text"></p>
+					<p>Jest pozyskiwana bezpośrednio od producenta z najlepszej partii.</p>
+					<p>Przeznaczona jest głównie do wykonywania cienkich warstw do grubości ok, 5mm.</p>Stosowana w przypadku powlekania, laminowania, odlewania lub zabezpieczania np:
+					<ul>
+						<li>sztuka, obrazy</li>
+						<li>biżuteria, rękodzieło</li>
+						<li>drewno, blaty</li>
+						<li>majsterkowanie</li>
+						<li>posadzki 3D</li>
+						<li>posadzki niepylące, elektrostatyczne</li>
+						<li>i wiele więcej</li>
+					</ul>kluczowe cechy
+					<ul>
+						<li>Stabilny współczynnik UV - nie żółknie,</li>
+						<li>Mała lepkość,</li>
+						<li>Bezwonna, nie zawiera LZO, nie zawiera rozpuszczalników,</li>
+						<li>Minimalny skurcz,</li>
+						<li>Po zastygnięciu bardzo trwała i mocna,</li>
+						<li>Wodoodporna,</li>
+						<li>Odporna na większość substancji chemicznych,</li>
+						<li>Bezwzględna przyczepność do większości podłoży,</li>
+						<li>Niepyląca,</li>
+						<li>Elektrostatyczna,</li>
+						<li>Samopoziomująca,</li>
+						<li>o wysokim połysku,</li>
+						<li>bezbarwna,</li>
+						<li>Przydatność żywicy 12 miesięcy od daty produkcji,</li>
+						<li>Stosunek mieszania 2:1,</li>
+						<li>dobrze łączy się w temperaturze pokojowej</li>
+						<li>Optycznie czysta 2-4 mm (zalecana grubość warstwy do 5mm),</li>
+						<li>Wygodny czas pracy: 30 - 40 min (Pełna twardość po 24 h),</li>
+						<li>Bardzo łatwy w użyciu i obsłudze</li>
+					</ul>
+					<p></p><a class="card-link" href="https://www.olx.pl/oferta/zywica-epoksydowa-do-laminowania-1kg-6x-gratis-CID628-IDxrIlx.html"  target="_blank">allegro</a> 
+					<a class="card-link" href="https://allegro.pl/oferta/zywica-epoksydowa1kg-do-laminowania-bezbarw-gratis-8489264718"  target="_blank">OLX</a>
+				</div>
+			</div>
+			<div class="gallery epoxy_rc d-md-flex flex-wrap col-xs-6">
+				<div class="col-md-6">
+					<a data-lightbox="shop_5" href="Epoxy_Resin_Clear/IMG_0892.JPG"><img alt="element" class="img-fluid" src="Epoxy_Resin_Clear/IMG_0892.JPG"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="operation5" style="display:none;">
+		<div class="d-md-flex">
+			<div class="card col-md-6" style="width: 18rem;">
+				<div class="card-body">
+					<h5 class="card-title">Źywica odlewnicza</h5>
+					<p class="card-text">
+					<p>Jedna z najlepszych i najtrwalszych żywic epoksydowych na rynku.</p>
+					<p>Przeznaczona głównie do wykonywania głębokich odlewów.</p>
+					<p>Pozyskiwana bezpośrednio od producenta z najlepszej partii.</p>Stosowana w przypadku powlekania, laminowania, odlewania lub zabezpieczania np:
+					<ul>
+						<li>sztuka, obrazy,</li>
+						<li>biżuteria, rękodzieło,</li>
+						<li>drewno, blaty,</li>
+						<li>majsterkowanie,</li>
+						<li>posadzki 3D,</li>
+						<li>posadzki niepylące, elektrostatyczne,</li>
+						<li>i wiele więcej</li>
+					</ul>Kluczowe cechy:
+					<ul>
+						<li>Przydatność żywicy 12 miesięcy od daty produkcji</li>
+						<li>Stabilny współczynnik UV - nie żółknie</li>
+						<li>Czysta, bezbarwna o wysokim połysku</li>
+						<li>Bezwonny, nie zawiera rozpuszczalników</li>
+						<li>Elektrostatyczna</li>
+						<li>Samopoziomująca</li>
+						<li>Wodoodporna</li>
+						<li>Odporna na większość substancji chemicznych</li>
+						<li>Bezwzględna przyczepność do większości podłoży</li>
+						<li>Wygodny czas pracy: 20-40 min</li>
+						<li>Czas utwardzenia do 10 godzin. Pełne utwardzenie po 72 godzinach</li>
+						<li>Stosunek mieszania 1:0,27 (100:27)</li>
+						<li>Pojedyncza warstwa może być gruba i nadal przezroczysta do 10 cm</li>
+						<li>Najlepiej łączy się w temperaturze pokojowej</li>
+					</ul>
+					<a class="card-link" href="https://allegro.pl/oferta/zywica-epoksydowa-1kg-odlewnicza-bezbarw-6xgratis-8541928636" target="_blank">Allegro</a> 
+					<a class="card-link" href="https://www.olx.pl/oferta/zywica-epoksydowa-1kg-odlewnicza-bezbarwna-gratis-x-6-CID628-IDABs09.html" target="_blank">OLX</a>
+					</p>
+				</div>
+			</div>
+			<div class="gallery epoxy_rcc d-md-flex flex-wrap col-xs-2">
+				<a data-lightbox="shop_4" href="Epoxy_Resin_Crystal_Clear/IMG_1095.JPG"><img alt="element" class="img-fluid" src="Epoxy_Resin_Crystal_Clear/IMG_1095.JPG"></a>
+			</div>
+		</div>
+	</div><!--  -->
+	<script src="menu.js">
+	</script> 
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+	</script> 
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+	</script> 
+</body>
+</html>

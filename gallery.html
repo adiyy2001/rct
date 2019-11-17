@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous" />
+    <!--  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="../js/galler.js"></script>
+    <!--  -->
+    <style>
+        img[alt="element"]{
+                width: 200px !important;
+                height: 150px !important;
+                border-radius: 20%;
+                margin-bottom: 10px;
+            }
+        body{
+            font-size: 16px !important;
+        }
+        .navbar{
+            min-height: 110.5px !important;
+        }
+.gallery-title
+{
+    font-size: 36px;
+    color: #0274d8;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 47px;
+    border-bottom: 4px solid #5e5e5e;
+    border-radius: 4px 4px;
+}
+.filter-button
+{
+    font-size: 18px;
+    border: 3px solid #0274d8;
+    border-radius: 5px;
+    text-align: center;
+    color: #0274d8;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.filter-button:hover
+{
+    border: 3px solid #0274d8;
+    border-radius: 5px;
+    text-align: center;
+    color: #0274d8 !important;
+    background-color: white !important;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: #0274d8;
+    color: white;
+}
+
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+    width: 365px;
+    height: 365px;
+}
+
+.btn-lg, .btn-group-lg > .btn{
+  border-radius: 30px !important;
+  width: 130px;
+}
+
+.gallery_product{
+    width: 100px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+    </style>
+        <link rel="stylesheet" href="../path/to/lightbox.css">
+        <script src="../path/to/lightbox.js"></script>
+  <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet">
+<script src="app.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="images/ResinSystem logo.png" alt="logo" width="50%" class="img-fluid" height="120%"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">Produkty</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            </li>
+          </ul>
+          </div>
+      </nav>
+
+      <div class="container">
+        <div class="row">
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <!-- <h1 class="gallery-title">Projekty klientów</h1> -->
+        </div>
+
+        <div>
+          <div class="text-center">
+            <button class="btn_1 btn-default filter-button btn-primary btn-lg" data-filter="all">wszystko</button>
+            <button class="btn_1 btn-default filter-button btn-primary btn-lg" data-filter="hdpe">stoły / blaty</button>
+            <button class="btn_1 btn-default filter-button btn-primary btn-lg" data-filter="sprinkle">posadzki</button>
+            <button class="btn_1 btn-default filter-button btn-primary btn-lg" data-filter="jewelery">biżuteria</button>
+            <button class="btn_1 btn-default filter-button btn-primary btn-lg" data-filter="spray">inne</button>
+
+          </div>
+        <br/>
+
+
+        <div class="macy">
+                <div class="gallery_product  offset-xs-1 col-lg-3 col-sm-4 col-xs-6 filter sprinkle gallery">
+                        <a href="gallery_photo/07.11.2019/minifed/5742009445175328614.jpg" data-lightbox="roadtrip"><img src="gallery_photo/07.11.2019/5742009445175328614.jpg" class="img-responsive" alt="element"></a>
+                    </div>
+                    <div class="gallery_product  offset-xs-1 col-lg-3 col-sm-4 col-xs-6 filter spray gallery">
+                            <a href="gallery_photo/07.11.2019/minifed/73504664_2503508816369422_5459285547866390528_o.jpg" data-lightbox="roadtrip"><img src="gallery_photo/07.11.2019/j1.jpg" class="img-responsive" alt="element"></a>
+                        </div>
+                        <div class="gallery_product  offset-xs-1 col-lg-3 col-sm-4 col-xs-6 filter hdpe gallery">
+                                <a href="gallery_photo/07.11.2019/minifed/74607623_132861388122409_5000673673053470720_o.jpg" data-lightbox="roadtrip"><img src="gallery_photo/07.11.2019/74607623_132861388122409_5000673673053470720_o.jpg" class="img-responsive" alt="element"></a>
+                            </div>
+                            <div class="gallery_product  offset-xs-1 col-lg-3 col-sm-4 col-xs-6 filter spray gallery">
+                                    <a href="gallery_photo/07.11.2019/minifed/75242072_2503025876417716_793039619280076800_o.jpg" data-lightbox="roadtrip"><img src="gallery_photo/07.11.2019/75242072_2503025876417716_793039619280076800_o.jpg" class="img-responsive" alt="element"></a>
+                                </div>
+                                <div class="gallery_product  offset-xs-1 col-lg-3 col-sm-4 col-xs-6 filter spray gallery">
+                                        <a href="gallery_photo/07.11.2019/minifed/R.Szper3.jpg" data-lightbox="roadtrip"><img src="gallery_photo/07.11.2019/R.Szper3.jpg" class="img-responsive" alt="element"></a>
+                                    </div>
+                                    <div class="gallery_product  offset-xs-1 col-lg-3 col-sm-4 col-xs-6 filter spray gallery">
+                                            <a href="gallery_photo/07.11.2019/minifed/R.Szper6.jpg" data-lightbox="roadtrip"><img src="gallery_photo/07.11.2019/R.Szper6.jpg" class="img-responsive" alt="element"></a>
+                                        </div>
+                                        <div class="gallery_product  offset-xs-1 col-lg-3 col-sm-4 col-xs-6 filter spray gallery">
+                                                <a href="gallery_photo/07.11.2019/minifed/slowriderart1.jpg" data-lightbox="roadtrip"><img src="gallery_photo/07.11.2019/slowriderart1.jpg" class="img-responsive" alt="element"></a>
+                                            </div>   
+            <div class="gallery_product  offset-xs-1 col-lg-3 col-sm-4 col-xs-6 filter jewelery gallery">
+                <a href="gallery_photo/1-min.jpg" data-lightbox="roadtrip"><img src="gallery_photo/1.jpg" class="img-responsive" alt="element"></a>
+            </div>
+
+            <div class="gallery_product  col-lg-3 col-sm-4 col-xs-6 filter spray">
+                <a href="gallery_photo/2-min.jpg" data-lightbox="roadtrip"><img src="gallery_photo/2.jpg" class="img-responsive" alt="element"></a>
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-4 col-sm-4 col-xs-6 filter jewelery">
+                <a href="gallery_photo/3-min.jpg" data-lightbox="roadtrip"><img src="gallery_photo/3.jpg" class="img-responsive" alt="element"></a>
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                <a href="gallery_photo/4-min.jpg" data-lightbox="roadtrip"><img src="gallery_photo/4.jpg" class="img-responsive" alt="element"></a>
+            </div>
+
+            <div class="gallery_product  col-lg-3 col-sm-4 col-xs-6 filter jewelery">
+                <a href="gallery_photo/5-min.jpg" data-lightbox="roadtrip"><img src="gallery_photo/5.jpg" class="img-responsive" alt="element"></a>
+            </div>
+
+            <div class="gallery_product  col-lg-3 col-sm-4 col-xs-6 filter hdpe">
+                <a href="gallery_photo/17-min.jpeg" data-lightbox="roadtrip"><img src="gallery_photo/17.jpeg" height="50%" class="img-responsive" alt="element"></a>
+            </div>
+
+            <div class="gallery_product  col-lg-3 col-sm-4 col-xs-6 filter hdpe">
+                <a href="gallery_photo/7-min.jpg" data-lightbox="roadtrip"><img src="gallery_photo/7.jpg" class="img-responsive" alt="element"></a>
+            </div>
+
+            <div class="gallery_product  col-lg-3 col-sm-4 col-xs-6 filter jewelery">
+                <a href="gallery_photo/8-min.jpg" data-lightbox="roadtrip"><img src="gallery_photo/8.JPG" class="img-responsive" alt="element"></a>
+            </div>
+
+            <div class="gallery_product  col-lg-3 col-sm-4 col-xs-6 filter jewelery">
+                <a href="gallery_photo/9-min.jpg" data-lightbox="roadtrip"><img src="gallery_photo/9.JPG" class="img-responsive" alt="element"></a>
+            </div>
+
+            <div class="gallery_product  col-lg-3 col-sm-4 col-xs-6 filter hdpe">
+                <a href="gallery_photo/10-min.jpeg" data-lightbox="roadtrip"><img src="gallery_photo/10.jpeg" class="img-responsive" alt="element"></a>
+            </div>
+
+            <div class="gallery_product  col-lg-3 col-sm-4 col-xs-6 filter hdpe">
+                <a href="gallery_photo/11-min.jpeg" data-lightbox="roadtrip"><img src="gallery_photo/11.jpeg" class="img-responsive" alt="element"></a>
+            </div>
+
+            <div class="gallery_product  col-lg-3 col-sm-4 col-xs-6 filter hdpe">
+                <a href="gallery_photo/12-min.jpg" data-lightbox="roadtrip"><img src="gallery_photo/12.jpg" class="img-responsive" alt="element"></a>
+            </div>
+            <div class="gallery_product  col-lg-3 col-sm-4 col-xs-6 filter hdpe">
+                <a href="gallery_photo/13-min.jpg" data-lightbox="roadtrip"><img src="gallery_photo/13.jpg" class="img-responsive" alt="element"></a>
+            </div>
+
+            <div class="gallery_product  col-lg-3 col-sm-4 col-xs-6 filter hdpe">
+                <a href="gallery_photo/14-min.jpg" data-lightbox="roadtrip"><img src="gallery_photo/14.jpg" class="img-responsive" alt="element"></a>
+            </div>
+
+            <div class="gallery_product  col-lg-3 col-sm-4 col-xs-6 filter hdpe">
+                <a href="gallery_photo/15-min.jpg" data-lightbox="roadtrip"><img src="gallery_photo/15.jpg" class="img-responsive" alt="element"></a>
+            </div>
+
+            <div class="gallery_product  col-lg-3 col-sm-4 col-xs-6 filter hdpe">
+                <a href="gallery_photo/16.jpg" data-lightbox="roadtrip"><img src="gallery_photo/16.jpg" class="img-responsive" alt="element"></a>
+            </div>
+
+            <div class="gallery_product  col-lg-3 col-sm-4 col-xs-6 filter jewelery">
+                <a href="gallery_photo/6-min.jpg" data-lightbox="roadtrip"><img src="gallery_photo/6.jpg" class="img-responsive" alt="element"></a>
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                <a href="gallery_photo/18-min.jpeg" data-lightbox="roadtrip"><img src="gallery_photo/18.jpeg" class="img-responsive" alt="element"></a>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
